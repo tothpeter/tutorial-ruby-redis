@@ -7,3 +7,4 @@ bundle exec rake test:lib
   - require './lib/persist_letters'
   - require './lib/populate_letters'
   - PersistLetters.new.execute 3
+- Run redis in command line: redis-server

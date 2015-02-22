@@ -1,18 +1,17 @@
 class Message
-  def initialize body, user, url
+  def initialize user, body, url
     @body = body
     @user = user
     @url = url
   end
 
   def send
-    HTTParty.post
-      "http://localhost:3010/messages",
+    HTTParty.post "http://localhost:3010/messages",
       body: {
         message: {
           body: @body,
           user: @user,
-          url: @urel
+          url: @url
         }
       }.to_json,
       headers: {

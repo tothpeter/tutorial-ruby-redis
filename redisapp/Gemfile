@@ -26,6 +26,7 @@ gem 'redcarpet'
 gem 'redis'
 gem 'redis-rails'
 gem 'sidekiq'
+gem 'celluloid', '0.15.2'
 gem 'httparty'
 
 gem 'puma'
